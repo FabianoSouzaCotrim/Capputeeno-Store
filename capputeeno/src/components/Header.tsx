@@ -4,6 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Saira_Stencil_One } from "next/font/google";
 import { PrimaryInputSearchIcon } from './PrimaryInput';
+import { CartControl } from './CartControl';
 
 const sairaStencilOne = Saira_Stencil_One({
    subsets: ["latin"],
@@ -19,6 +20,13 @@ const TagHeader = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 20px 160px;
+
+    > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
 `
 
 const Logo = styled.a`
@@ -35,6 +43,7 @@ export function Header(props : HeaderProps){
                 <Logo className={sairaStencilOne.className}>Capputeeno</Logo>
                 <div>
                     <PrimaryInputSearchIcon placeholder='Procurando por algo específico?'/>
+                    <CartControl/>
                 </div>
             </TagHeader>
         </>
