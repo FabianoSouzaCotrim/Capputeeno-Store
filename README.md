@@ -15,11 +15,11 @@ Aqui neste e-commerce para venda de canecas e camisetas que temos as seguintes f
 - [ ] Finalização da compra
 
 📋 Técnologias utilizadas e critérios
-- Figma [protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449)
+- Figma [protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449) - Disponibilizado pela RocktSeat
 - Next.js e Typescript
 - Estilização com styled-components
 - local storage para gerenciar o carrinho
-- Consumo de **API GraphQL**
+- Consumo de **API GraphQL** - Disponibilizado pela RocktSeat
 - Testes unitários
 - Gerenciamento de estado
 - Componentização
