@@ -14,10 +14,18 @@ Aqui neste e-commerce para venda de canecas e camisetas que temos as seguintes f
 - [ ] Adicionar e remover produtos do carrinho
 - [ ] Finalização da compra
 
-📋 Técnologias utilizadas
+📋 Técnologias utilizadas e critérios
 - Figma [protótipo](https://www.figma.com/file/rET9F2CeUEJdiVN7JRu993/E-commerce---capputeeno?node-id=680%3A6449)
 - Next.js e Typescript
 - Estilização com styled-components
 - local storage para gerenciar o carrinho
 - Consumo de **API GraphQL**
 - Testes unitários
+- Gerenciamento de estado
+- Componentização
+- Responsividade
+- Preocupação com usabilidade
+- Preocupação com acessibilidade
+- Testes e2e
+- Padrões de código
+- Padrão de commits
