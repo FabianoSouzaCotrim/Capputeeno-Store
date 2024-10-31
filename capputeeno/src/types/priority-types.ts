@@ -1,4 +1,4 @@
-export enum PriorityType {
+export enum PriorityTypes {
     'POPULARITY',
     'NEWS',
     'MINOR_PRICE',
