@@ -3,8 +3,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Saira_Stencil_One } from "next/font/google";
-import { PrimaryInputSearchIcon } from './PrimaryInput';
-import { CartControl } from './CartControl';
+import { PrimaryInputSearchIcon } from './primary-input';
+import { CartControl } from './cart-control';
 
 const sairaStencilOne = Saira_Stencil_One({
    subsets: ["latin"],

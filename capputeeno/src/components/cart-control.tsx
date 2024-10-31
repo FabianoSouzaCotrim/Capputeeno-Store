@@ -11,7 +11,7 @@ const CartCount = styled.span`
 
     background-color: var(--delete-color);
     color: white;
-
+    user-select: none;
     margin-left: -10px;
 `
 
