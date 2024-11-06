@@ -1,18 +1,18 @@
 "use client"
 
-import React from 'react';
-import styled from 'styled-components';
-import { Saira_Stencil_One } from "next/font/google";
-import { PrimaryInputSearchIcon } from './primary-input';
-import { CartControl } from './cart-control';
+import { styled } from "styled-components"
+import { Saira_Stencil_One } from 'next/font/google'
+import { PrimaryInputWSearchIcon } from "./primary-input"
+import { CartControl } from "./cart-control"
+import { useFilter } from "@/hooks/useFilter"
 
-const sairaStencilOne = Saira_Stencil_One({
-   subsets: ["latin"],
-   weight: ['400']
-  });
+const sairaStencil = Saira_Stencil_One({
+    weight: ['400'],
+    subsets: ['latin']
+})
 
 interface HeaderProps {
-    
+
 }
 
 const TagHeader = styled.header`
@@ -21,7 +21,7 @@ const TagHeader = styled.header`
     justify-content: space-between;
     padding: 20px 160px;
 
-    > div{
+    > div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,15 +37,19 @@ const Logo = styled.a`
 `
 
 export function Header(props : HeaderProps){
-    return (
-        <>
-            <TagHeader>
-                <Logo className={sairaStencilOne.className}>Capputeeno</Logo>
-                <div>
-                    <PrimaryInputSearchIcon placeholder='Procurando por algo específico?'/>
-                    <CartControl/>
-                </div>
-            </TagHeader>
-        </>
-    );
-};
+    const {setSearch, search} = useFilter();
+
+    return(
+        <TagHeader>
+            <Logo className={sairaStencil.className}>Capputeeno</Logo>
+            <div>
+                <PrimaryInputWSearchIcon
+                    value={search}
+                    handleChange={setSearch}
+                    placeholder="Procurando por algo específico?"
+                />
+                <CartControl/>
+            </div>
+        </TagHeader>
+    )
+}

@@ -3,7 +3,7 @@
 import { FilterBar } from "@/components/filter-bar";
 import { ProductsList } from "@/components/products-list";
 import { DefaultPageLayout } from "@/components/default-page-layout";
-import styled from "styled-components";
+import {styled} from "styled-components";
 
 const PageWrapper = styled.main`
   display: flex;

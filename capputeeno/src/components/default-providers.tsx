@@ -1,6 +1,6 @@
 "use client"
 
-import { FilterContextProvider } from "@/context/filter-context";
+import { FilterContextProvider } from "@/contexts/filter-context";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactNode } from "react";
 import { ThemeProvider } from "styled-components";
