@@ -29,3 +29,27 @@ Aqui neste e-commerce para venda de canecas e camisetas que temos as seguintes f
 - Testes e2e
 - Padrões de código
 - Padrão de commits
+
+
+🖥️ Instalação
+
+cd capputeeno
+Instale as dependências:
+
+npm install
+Execute o Frontend:
+
+npm run dev
+
+
+Executando a API
+
+Acesse a pasta da API:
+
+cd api
+Instale as dependências:
+
+npm install
+Inicie a API:
+
+npm start
