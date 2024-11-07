@@ -50,6 +50,7 @@ cd api
 Instale as dependências:
 
 npm install
+
 Inicie a API:
 
 npm start
