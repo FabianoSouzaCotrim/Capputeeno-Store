@@ -37,6 +37,7 @@ cd capputeeno
 Instale as dependências:
 
 npm install
+
 Execute o Frontend:
 
 npm run dev
