@@ -46,6 +46,7 @@ npm run dev
 Executando a API:
 
 cd api
+
 Instale as dependências:
 
 npm install
