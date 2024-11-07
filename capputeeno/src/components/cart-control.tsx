@@ -1,6 +1,7 @@
+import { styled } from "styled-components";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { CartIcon } from "./icons/cart-icon";
-import styled from "styled-components";
+import { useRouter } from "next/navigation";
 
 const CartCount = styled.span`
     width: 17px;
@@ -11,22 +12,27 @@ const CartCount = styled.span`
 
     background-color: var(--delete-color);
     color: white;
-    user-select: none;
+
     margin-left: -10px;
 `
 
-const Container = styled.div`
+const Container = styled.button`
     position: relative;
     cursor: pointer;
     border: none;
     background: transparent;
 `
 
-export function CartControl() {
+export function CartControl(){
+    const router = useRouter()
     const { value } = useLocalStorage('cart-items', [])
 
-    return(
-        <Container>
+    const handleNavigateToCart = () => {
+        router.push("/cart")
+    }
+
+    return (
+        <Container onClick={handleNavigateToCart}>
             <CartIcon/>
             {value.length > 0 && <CartCount>{value.length}</CartCount>}
         </Container>
