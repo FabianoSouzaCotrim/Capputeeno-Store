@@ -1,6 +1,6 @@
 # 🧠 Contexto
 
-O objetivo deste projeto é testar meus conhecimentos com o desafio criar uma loja de e-commerce com tema de café, vendendo camisas e canecas.
+O objetivo deste projeto é testar meus conhecimentos com o desafio criar um e-commerce com tema de café, vendendo camisas e canecas.
 Optando por tecnologias como Next.js e Typescript. Com styled-components, Estou garantindo que o design da loja seja bonito e responsivo. Para gerenciar o carrinho de compras, estou usando local storage, uma solução simples e eficaz.
 Para integrar dados de forma eficiente, estou utilizando uma API GraphQL. Isso me permite obter informações específicas sobre produtos e pedidos de forma rápida e personalizada.
 E, é claro, implementando testes unitários para garantir a estabilidade da aplicação.
